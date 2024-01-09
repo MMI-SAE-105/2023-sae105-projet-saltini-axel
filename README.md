@@ -1,8 +1,9 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OLLHpiQA)
-- NOM : 
-- PRÉNOM :
-- URL du site :
-- URL FIGMA :
+- NOM : SALTINI
+- PRÉNOM : Axel
+- URL du site : projet-s1-rawfootage.netlify.app
+- URL FIGMA : https://www.figma.com/file/WqzF3n3PnBP4xq018wK6qc/Maquettes-projet-individuel-%E2%80%94-Axel-Saltini?type=design&node-id=1602%3A126&mode=design&t=ydZp9Ac3roPiQFkq-1
+- IMPORTANT : J'avais commencé le site de mon côté sans le lien GitHub Classroom, mes anciens comits sont donc disponibles ici : https://github.com/saltini-axel/2024-projet-s1-axel-saltini (désolé pour la confusion).
 
 # Structure de départ pour le projet individuel.
 
