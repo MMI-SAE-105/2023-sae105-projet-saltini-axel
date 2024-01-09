@@ -126,7 +126,20 @@
                 <p class="main__buttontxt">ARTICLE SUIVANT</p>
             </a>
         </center>
-        <div class="article__espace2"></div>
+        <div class="article__espace"></div>
+        <center><img x-show="!menuIsOpen" class="article__img" src="../fr/assets/img/filmographie1.webp" alt="film2">
+        </center>
+        <section class="article__section" x-show="!menuIsOpen">
+            <h2 class="article__intertitre">L'article vous a plu ?<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+            <p class="article__lecture">Découvrez ci-dessous d'autres films abordant des sujets similaires à "Boyz N The Hood" !</p>
+            <div class="article__espace"></div>
+            <center><a x-show="!menuIsOpen" href="galerie.html" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">GALERIE DE FILMS</p>
+                </a>
+            </center>
+            <div class="article__espace"></div>
+        </section>
     </article>
     <footer x-show="!menuIsOpen">
         <div class="footer__ligne"></div>
