@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Raw Footage</title>
+
+    <link rel="stylesheet" href="../fr/src/css/style.css" />
+    <link rel="icon" href="../fr/assets/icones/logosite.svg" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body class="body">
+    <header x-show="!menuIsOpen" class="header">
+        <div class="header__rawfootage">
+            <img class="header__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+            <a href="../en/index.html" class="header__raw">Raw </a><a href="../en/index.html" class="header__footage">
+                Footage</a>
+            <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuburger"
+                src="../fr/assets/icones/menuburger.svg" alt="menuburger" />
+        </div>
+        <div class="header__ligne"></div>
+        </div>
+    </header>
+    </nav>
+    <menu class="menu">
+        <nav id="mainNav" x-show="menuIsOpen">
+            <menu class="menu">
+                <div class="menu__rawfootage">
+                    <img class="menu__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+                    <a href="../fr/index.html" class="menu__raw">Raw </a><a href="../fr/index.html" class="menu__footage">
+                        Footage</a>
+                    <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menu__menuburger"
+                        src="../fr/assets/icones/croix.svg" alt="croix" />
+                </div>
+                <div class="menu__ligne"></div>
+                </div>
+            </menu>
+            <ul class="menu__overlay">
+                <h2 class="menu__titre">ARTICLES<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+                <li><a class="menu__des" href="articlereplique.html">A deep and powerful replica</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlefilm.html">The movie: “Boyz N The Hood”</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlereal.html">John Singleton, a surprising director</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlemusique.html">Ice Cube’s greatest hit</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlelivre.html">When realism comes to novels</a></li>
+                <div class="menu__espace"> </div>
+                </span>
+                </div>
+                <h2 class="menu__titre">DISCOVER<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+                <li><a class="menu__des" href="livres.html">Other books</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="galerie.html">Movie gallery</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="projets.html">Student projects</a></li>
+                <div class="menu__espace"></div>
+                <p class="menu__des2">© 2024 - Axel Saltini<a href="../fr/index.html"><img class="menu__langue"
+                            src="../fr/assets/icones/francais.svg"></a></p>
+            </ul>
+        </nav>
+        </a>
+    </menu>
+    <article>
+        <section x-show="!menuIsOpen">
+            <h1 class="article__titre2">Movie<a class="article__rouge"> gallery</a></h1>
+        </section>
+        <section x-show="!menuIsOpen" class="article__section2">
+            <p class="article__lecture">If the realism and cruelty of Boyz N The Hood has impacted you, and you're looking for more, there are plenty of films
+            that take up its themes in their own way and explore other subjects.</p>
+        </section>
+        <center><img x-show="!menuIsOpen" class="article__img"" src=" ../fr/assets/img/galerie.webp"></center>
+        <section x-show="!menuIsOpen" class="article__section2"
+            x-data="{imageAffichée : null}">
+            <div class="article__espace2"></div>
+            <section x-show="!menuIsOpen" class="article__section">
+            <center><img src="../fr/assets/img/squarea1.webp" alt="square1"
+                @click="imageAffichée ='../fr/assets/img/fulla1.webp'"></center>
+            <div class="overlay" x-show="imageAffichée" @click="imageAffichée = null"
+                @keyup.escape.window="imageAffichée = null">
+                <figure><img :src="imageAffichée" alt="image"></figure>
+            </section>
+            </div>
+            <h2 class="main__titregalerie">Just Mercy</h2>
+            <h2 class="main__titregalerie">Destin Daniel Cretton</h2>
+            <p class="main__pgalerie">Attorney Bryan Stevenson fights to defend the wrongfully convicted in Alabama. He'll have to overcome a pronounced
+            racism in a hostile legal system in order to fight for justice.</p>
+            <center><a href="https://www.rottentomatoes.com/m/just_mercy" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">CHECK IT OUT</p>
+                </a>
+            </center>
+        </section>
+        <section x-show="!menuIsOpen" class="article__section2" x-data="{imageAffichée : null}">
+            <div class="article__espace"></div>
+            <section x-show="!menuIsOpen" class="article__section">
+                <center><img src="../fr/assets/img/squarea2.webp" alt="square2"
+                        @click="imageAffichée ='../fr/assets/img/fulla2.webp'"></center>
+                <div class="overlay" x-show="imageAffichée" @click="imageAffichée = null"
+                    @keyup.escape.window="imageAffichée = null">
+                    <figure><img :src="imageAffichée" alt="image"></figure>
+            </section>
+            </div>
+            <h2 class="main__titregalerie">Far From Heaven</h2>
+            <h2 class="main__titregalerie">Todd Haynes</h2>
+            <p class="main__pgalerie">In the 1950s, Cathy Whitaker discovers that her husband is having a homosexual relationship with another man. Isolated
+            and rejected, she eventually befriends a black man despite what society told her.</p>
+            <center><a href="https://www.rottentomatoes.com/m/far_from_heaven" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">CHECK IT OUT</p>
+                </a>
+            </center>
+        </section>
+        <section x-show="!menuIsOpen" class="article__section2" x-data="{imageAffichée : null}">
+            <div class="article__espace"></div>
+            <section x-show="!menuIsOpen" class="article__section">
+                <center><img src="../fr/assets/img/squarea3.webp" alt="square3"
+                        @click="imageAffichée ='../fr/assets/img/fulla3.webp'"></center>
+                <div class="overlay" x-show="imageAffichée" @click="imageAffichée = null"
+                    @keyup.escape.window="imageAffichée = null">
+                    <figure><img :src="imageAffichée" alt="image"></figure>
+            </section>
+            </div>
+            <h2 class="main__titregalerie">White Dog</h2>
+            <h2 class="main__titregalerie">Samuel Fuller</h2>
+            <p class="main__pgalerie">Right after a car accident, a white dog, who has been trained to attack black people, is taken in by Julie, a young
+            woman determined to change him.</p>
+            <center><a href="https://www.rottentomatoes.com/m/white_dog" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">CHECK IT OUT</p>
+                </a>
+            </center>
+        </section>
+        <section x-show="!menuIsOpen" class="article__section2" x-data="{imageAffichée : null}">
+            <div class="article__espace"></div>
+            <section x-show="!menuIsOpen" class="article__section">
+                <center><img src="../fr/assets/img/filmsquare4.webp" alt="square4"
+                        @click="imageAffichée ='../fr/assets/img/filmfull4.webp'"></center>
+                <div class="overlay" x-show="imageAffichée" @click="imageAffichée = null"
+                    @keyup.escape.window="imageAffichée = null">
+                    <figure><img :src="imageAffichée" alt="image"></figure>
+            </section>
+            </div>
+            <h2 class="main__titregalerie">Do The Right Thing</h2>
+            <h2 class="main__titregalerie">Spike Lee</h2>
+            <p class="main__pgalerie">On a hot day in Brooklyn, young Mookie works as a delivery boy at a local pizzeria. As everyone goes about their
+            business, the summer heat begins to exacerbate racial tensions.</p>
+            <center><a href="https://www.rottentomatoes.com/m/do_the_right_thing" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">CHECK IT OUT</p>
+                </a>
+            </center>
+        </section>
+        <section x-show="!menuIsOpen" class="article__section2" x-data="{imageAffichée : null}">
+            <div class="article__espace"></div>
+            <section x-show="!menuIsOpen" class="article__section">
+                <center><img src="../fr/assets/img/squarea5.webp" alt="square5"
+                        @click="imageAffichée ='../fr/assets/img/fulla5.webp'"></center>
+                <div class="overlay" x-show="imageAffichée" @click="imageAffichée = null"
+                    @keyup.escape.window="imageAffichée = null">
+                    <figure><img :src="imageAffichée" alt="image"></figure>
+            </section>
+            </div>
+            <h2 class="main__titregalerie">The Hate U Give</h2>
+            <h2 class="main__titregalerie">George Tillman Jr.</h2>
+            <p class="main__pgalerie">After witnessing the death of his childhood friend at the hands of a police officer, Starr tries to find a way to fight
+            for what's right despite pressure from his community.</p>
+            <center><a href="https://www.rottentomatoes.com/m/the_hate_u_give" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">CHECK IT OUT</p>
+                </a>
+            </center>
+        </section>
+    </article>
+    <footer x-show="!menuIsOpen">
+        <div class="footer__ligne"></div>
+        <section class="footer__rawfootage">
+            <a href="../en/index.html" class="footer__raw">Raw </a><a href="../en/index.html" class="footer__footage">
+                Footage</a>
+        </section>
+        <section class="footer__texte">
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=contact.html>Contact</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=apropos.html>About us</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=glossaire.html>Glossary</a></h3>
+            <div class="footer__espace"></div>
+            <h3 class="footer__titre">Legal notice</h3>
+            <p class="footer__p">Project carried out as part of a teaching exercise at
+                the department <a class="footer__hyperlien2" href="https://butmmi.thomasjeu.fr/#/">MMI in
+                    Montbéliard.</a></p>
+            <div class="footer__espace"></div>
+            <p class="footer__p"><a href="mailto:axel.saltini@edu.univ-fcomte.fr">axel.saltini@edu.univ-fcomte.fr</a>
+            </p>
+            <div class="footer__espace"></div>
+            <div class="footer__espace"></div>
+            <p class="footer__p">© 2024 - Axel Saltini</p>
+        </section>
+    </footer>
+</body>

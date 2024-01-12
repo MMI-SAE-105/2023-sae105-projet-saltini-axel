@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Raw Footage</title>
+
+    <link rel="stylesheet" href="../fr/src/css/style.css" />
+    <link rel="icon" href="../fr/assets/icones/logosite.svg" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body class="body">
+    <header x-show="!menuIsOpen" class="header">
+        <div class="header__rawfootage">
+            <img class="header__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+            <a href="../en/index.html" class="header__raw">Raw </a><a href="../en/index.html" class="header__footage">
+                Footage</a>
+            <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuburger"
+                src="../fr/assets/icones/menuburger.svg" alt="menuburger" />
+        </div>
+        <div class="header__ligne"></div>
+        </div>
+    </header>
+    </nav>
+    <menu class="menu">
+        <nav id="mainNav" x-show="menuIsOpen">
+            <menu class="menu">
+                <div class="menu__rawfootage">
+                    <img class="menu__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+                    <a href="../fr/index.html" class="menu__raw">Raw </a><a href="../fr/index.html" class="menu__footage">
+                        Footage</a>
+                    <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menu__menuburger"
+                        src="../fr/assets/icones/croix.svg" alt="croix" />
+                </div>
+                <div class="menu__ligne"></div>
+                </div>
+            </menu>
+            <ul class="menu__overlay">
+                <h2 class="menu__titre">ARTICLES<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+                <li><a class="menu__des" href="articlereplique.html">A deep and powerful replica</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlefilm.html">The movie: “Boyz N The Hood”</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlereal.html">John Singleton, a surprising director</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlemusique.html">Ice Cube’s greatest hit</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlelivre.html">When realism comes to novels</a></li>
+                <div class="menu__espace"> </div>
+                </span>
+                </div>
+                <h2 class="menu__titre">DISCOVER<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+                <li><a class="menu__des" href="livres.html">Other books</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="galerie.html">Movie gallery</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="projets.html">Student projects</a></li>
+                <div class="menu__espace"></div>
+                <p class="menu__des2">© 2024 - Axel Saltini<a href="../fr/index.html"><img class="menu__langue"
+                            src="../fr/assets/icones/francais.svg"></a></p>
+            </ul>
+        </nav>
+        </a>
+    </menu>
+    <article>
+        <section x-show="!menuIsOpen">
+            <h1 class="article__titre">"They want us to <a class="article__rouge">kill</a> ourselves"</h1>
+            <center><img src="../fr/assets/img/replique1.webp" alt="replique1" class="article__img"></center>
+            <figcaption class="article__caption">"Boyz N The Hood", Illustration</figcaption>
+        </section>
+        <section x-show="!menuIsOpen" class="article__section">
+            <h5 class="article__lecture">Published by Axel Saltini 25/10 – 2 min reading<img class="article__blood"
+                    src="../fr/assets/icones/blood.svg"></h5>
+            <p class="article__texte">"They want us to kill ourselves." This quote, from the movie <a class="article__rouge">"Boyz N The Hood"</a>,
+                is one of the main lines in John Singleton's film. Racism and violence are the two main themes of this movie, and this
+                line reflects them wonderfully.</p>
+        </section>
+        <center><img x-show="!menuIsOpen" class="article__img" src="../fr/assets/img/replique2.webp" alt="replique2">
+        </center>
+        <figcaption x-show="!menuIsOpen" class="article__caption">"Boyz N The Hood", Illustration</figcaption>
+        <section class="article__section" x-show="!menuIsOpen">
+            <h2 class="article__intertitre">A memorable scene</h2>
+            <p class="article__lecture">In the scene, the main character's father explains that in poor neighbourhoods, white people want black people to <a class="article__rouge">destroy themselves</a>. To him, it’s without a doubt because of the easy access to alcohol and guns on every street corner, which drive people
+            to be violent.</p>
+            <p class="article__lecture">To him, it's a way of weakening the black community without necessarily discriminating against it openly, even if some
+            people don't hide it.</p>
+            <p class="article__lecture">Unjustified police violence is everywhere and in no way reflects justice. In this environment, <a class="article__rouge">innocents do not exist</a>.</p>
+            <div class="article__espace"></div>
+            <h2 class="article__intertitre">A battle that must be waged</h2>
+            <p class="article__lecture">So, how do we solve this problem? According to the father of Tre, the main character, the answer is obvious. The black
+            community needs to stick together and move forward together.</p>
+            <p class="article__lecture">If the system encourages internal conflict, we must do everything we can to avoid sinking into <a class="article__rouge">gang violence, revenge, and alcoholism.</a>
+                These are the values that Tre learns from his father, and that help him evolve as a black man.</p>
+        </section>
+        <center><img src="../fr/assets/img/replique3.webp" alt="replique3" class="article__img" x-show="!menuIsOpen"></center>
+        <figcaption x-show="!menuIsOpen" class="article__caption">"Boyz N The Hood", Illustration</figcaption>
+        <section class="article__section" x-show="!menuIsOpen">
+            <h2 class="article__intertitre">The message</h2>
+            <p class="article__lecture">This line perfectly demonstrates the film's themes and what made it such a success.</p>
+            <p class="article__lecture">It's scary to want to challenge the system and turn a blind eye to the horrors that are committed by gangs, but it's the
+            only way to move things forward. The <a class="article__rouge">black community</a> must unite and stop destroying itself, it must break the circle of violence that is killing them.</p>
+            <p class="article__lecture">It's a moral that is presented at the end of "Boyz N The Hood", with a tragic finale that shows the difficulty of
+            overcoming gang violence, but rewards those who have known how to<a class="article__rouge"> challenge society</a>.</p>
+        </section>
+        <center><a x-show="!menuIsOpen" href="articlefilm.html" class="main__button">
+                <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                <p class="main__buttontxt">NEXT ARTICLE</p>
+            </a>
+        </center>
+        <div class="article__espace2"></div>
+    </article>
+    <footer x-show="!menuIsOpen">
+        <div class="footer__ligne"></div>
+        <section class="footer__rawfootage">
+            <a href="../en/index.html" class="footer__raw">Raw </a><a href="../en/index.html" class="footer__footage">
+                Footage</a>
+        </section>
+        <section class="footer__texte">
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=contact.html>Contact</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=apropos.html>About us</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=glossaire.html>Glossary</a></h3>
+            <div class="footer__espace"></div>
+            <h3 class="footer__titre">Legal notice</h3>
+            <p class="footer__p">Project carried out as part of a teaching exercise at
+                the department <a class="footer__hyperlien2" href="https://butmmi.thomasjeu.fr/#/">MMI in
+                    Montbéliard.</a></p>
+            <div class="footer__espace"></div>
+            <p class="footer__p"><a href="mailto:axel.saltini@edu.univ-fcomte.fr">axel.saltini@edu.univ-fcomte.fr</a>
+            </p>
+            <div class="footer__espace"></div>
+            <div class="footer__espace"></div>
+            <p class="footer__p">© 2024 - Axel Saltini</p>
+        </section>
+    </footer>
+</body>

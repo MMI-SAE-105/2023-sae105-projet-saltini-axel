@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Raw Footage</title>
+
+    <link rel="stylesheet" href="../fr/src/css/style.css" />
+    <link rel="icon" href="../fr/assets/icones/logosite.svg" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body class="body">
+    <header x-show="!menuIsOpen" class="header">
+        <div class="header__rawfootage">
+            <img class="header__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+            <a href="../en/index.html" class="header__raw">Raw </a><a href="../en/index.html" class="header__footage">
+                Footage</a>
+            <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuburger"
+                src="../fr/assets/icones/menuburger.svg" alt="menuburger" />
+        </div>
+        <div class="header__ligne"></div>
+        </div>
+    </header>
+    </nav>
+    <menu class="menu">
+        <nav id="mainNav" x-show="menuIsOpen">
+            <menu class="menu">
+                <div class="menu__rawfootage">
+                    <img class="menu__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+                    <a href="../fr/index.html" class="menu__raw">Raw </a><a href="../fr/index.html"
+                        class="menu__footage">
+                        Footage</a>
+                    <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menu__menuburger"
+                        src="../fr/assets/icones/croix.svg" alt="croix" />
+                </div>
+                <div class="menu__ligne"></div>
+                </div>
+            </menu>
+            <ul class="menu__overlay">
+                <h2 class="menu__titre">ARTICLES<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+                <li><a class="menu__des" href="articlereplique.html">A deep and powerful replica</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlefilm.html">The movie: “Boyz N The Hood”</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlereal.html">John Singleton, a surprising director</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlemusique.html">Ice Cube’s greatest hit</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlelivre.html">When realism comes to novels</a></li>
+                <div class="menu__espace"> </div>
+                </span>
+                </div>
+                <h2 class="menu__titre">DISCOVER<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+                <li><a class="menu__des" href="livres.html">Other books</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="galerie.html">Movie gallery</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="projets.html">Student projects</a></li>
+                <div class="menu__espace"></div>
+                <p class="menu__des2">© 2024 - Axel Saltini<a href="../fr/index.html"><img class="menu__langue"
+                            src="../fr/assets/icones/francais.svg"></a></p>
+            </ul>
+        </nav>
+        </a>
+    </menu>
+    <main>
+        <section x-show="!menuIsOpen">
+            <center><img src="../fr/assets/img/accueil1.webp" alt="accueil1" class="main__imageaccueil" /></center>
+            <h1 class="main__replique">"They want us to <a class="main__red">kill</a> ourselves"</h1>
+            <center>
+                <div class="main__conteneur">
+                    <center>
+                        <div class="main__relative">
+                            <img src="../fr/assets/img/accueil2.webp" alt="accueil2" class="main__imageaccueil2">
+                            <center>
+                                <div class="main__texteimage">
+                                    <p>Discover in these articles how a cult movie left its mark on an entire community,
+                                        and still makes pertinent points in
+                                        today’s society.</p>
+                                </div>
+                            </center>
+                        </div>
+                    </center>
+                </div>
+            </center>
+        </section>
+        <section x-show="!menuIsOpen">
+            <div class="main__centre">
+                <div class="main__block">
+                    <h2 class="main__articletitre">"They want us to ㅤkill ourselves", a ㅤcry for help</h2>
+                    <p class="main__articledes">You'll be amazed by the depth and meaning of this line, which completely
+                        describe every point that are present in the
+                        movie.</p>
+                </div>
+                <img src="../fr/assets/img/accueilarticle1.webp" alt="accueilarticle1" class="main__imgarticle" />
+            </div>
+            <center><a href="articlereplique.html" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">READ ARTICLE</p>
+                </a>
+            </center>
+        </section>
+        <section x-show="!menuIsOpen">
+            <div class="main__espace"></div>
+            <center><img src="../fr/assets/img/accueil3.webp" alt="accueil3" class="main__imgtransi" /></center>
+            <div class="main__centre">
+                <img src="../fr/assets/img/accueilarticle2.webp" alt="accueilarticle2" class="main__imgarticle" />
+                <div class="main__block2">
+                    <h2 class="main__articletitre">“Boyz N The ㅤHood”, a timeless message</h2>
+                    <p class="main__articledes">Discover the history of Los Angeles' underprivileged neighbourhoods with
+                        a never-before-seen approach.</p>
+                </div>
+            </div>
+            <center><a href="articlefilm.html" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">READ ARTICLE</p>
+                </a>
+            </center>
+        </section>
+        <section x-show="!menuIsOpen">
+            <div class="main__espace"></div>
+            <center><img src="../fr/assets/img/accueil4.webp" alt="accueil4" class="main__imgtransi2" /></center>
+            <div class="main__centre">
+                <div class="main__block">
+                    <h2 class="main__articletitre">"A symbol of success: John Singleton”</h2>
+                    <p class="main__articledes">John Singleton represents a huge influence on many filmmakers, being an
+                        icon in the industry thanks to his masterpiece,
+                        Boyz N The Hood.</p>
+                </div>
+                <img src="../fr/assets/img/accueilarticle3.webp" alt="accueilarticle3" class="main__imgarticle" />
+            </div>
+            <center><a href="articlereal.html" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">READ ARTICLE</p>
+                </a>
+            </center>
+        </section>
+        <section x-show="!menuIsOpen">
+            <div class="main__espace"></div>
+            <center><img src="../fr/assets/img/accueil5.webp" alt="accueil5" class="main__imgtransi" /></center>
+            <div class="main__centre">
+                <img src="../fr/assets/img/accueilarticle4.webp" alt="accueilarticle4" class="main__imgarticle" />
+                <div class="main__block2">
+                    <h2 class="main__articletitre">Ice Cube's hope with “It Was A Good Day”</h2>
+                    <p class="main__articledes">Ice Cube delivers a powerful message filled with hope and dealing with
+                        dark and heavy themes with upbeat production.
+                        Discover this hip-hop classic.</p>
+                </div>
+            </div>
+            <center><a href="articlemusique.html" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">READ ARTICLE</p>
+                </a>
+            </center>
+        </section>
+        <section x-show="!menuIsOpen">
+            <div class="main__espace"></div>
+            <center><img src="../fr/assets/img/accueil6.webp" alt="accueil6" class="main__imgtransi2" /></center>
+            <div class="main__centre">
+                <div class="main__block">
+                    <h2 class="main__articletitre">"The endless struggle of The Hate U Give"</h2>
+                    <p class="main__articledes">Angie Thomas has created a work that blends the themes of Boyz N The
+                        Hood while exposing new issues with her novel.</p>
+                </div>
+                <img src="../fr/assets/img/accueilarticle5.webp" alt="accueilarticle5" class="main__imgarticle" />
+            </div>
+            <center><a href="articlelivre.html" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">READ ARTICLE</p>
+                </a>
+            </center>
+            <div class="main__espace"></div>
+        </section>
+        <section x-show="!menuIsOpen">
+            <div class="main__espace"></div>
+            <center><img src="../fr/assets/img/accueil7.webp" alt="accueil7" class="main__imgtransi" /></center>
+            <div class="main__centre">
+                <img src="../fr/assets/img/autreprojets.webp" alt="autreprojets" class="main__imgarticle" />
+                <div class="main__block2">
+                    <h2 class="main__articletitre">Want to discover other student projects ?</h2>
+                    <p class="main__articledes">The students from the MMI department in Montbéliard have all created an
+                        incredible website based on a film replica!
+                    </p>
+                </div>
+            </div>
+            <center><a href="projets.html" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">STUDENT PROJECTS</p>
+                </a>
+            </center>
+            <div class="main__espace"></div>
+        </section>
+    </main>
+    <footer x-show="!menuIsOpen">
+        <div class="footer__ligne"></div>
+        <section class="footer__rawfootage">
+            <a href="../en/index.html" class="footer__raw">Raw </a><a href="../en/index.html" class="footer__footage">
+                Footage</a>
+        </section>
+        <section class="footer__texte">
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=contact.html>Contact</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=apropos.html>About us</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=glossaire.html>Glossary</a></h3>
+            <div class="footer__espace"></div>
+            <h3 class="footer__titre">Legal notice</h3>
+            <p class="footer__p">Project carried out as part of a teaching exercise at
+                the department <a class="footer__hyperlien2" href="https://butmmi.thomasjeu.fr/#/">MMI in
+                    Montbéliard.</a></p>
+            <div class="footer__espace"></div>
+            <p class="footer__p"><a href="mailto:axel.saltini@edu.univ-fcomte.fr">axel.saltini@edu.univ-fcomte.fr</a>
+            </p>
+            <div class="footer__espace"></div>
+            <div class="footer__espace"></div>
+            <p class="footer__p">© 2024 - Axel Saltini</p>
+        </section>
+    </footer>
+</body>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Raw Footage</title>
+
+    <link rel="stylesheet" href="../fr/src/css/style.css" />
+    <link rel="icon" href="../fr/assets/icones/logosite.svg" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body class="body">
+    <header x-show="!menuIsOpen" class="header">
+        <div class="header__rawfootage">
+            <img class="header__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+            <a href="../fr/index.html" class="header__raw">Raw </a><a href="../fr/index.html" class="header__footage">
+                Footage</a>
+            <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuburger"
+                src="../fr/assets/icones/menuburger.svg" alt="menuburger" />
+        </div>
+        <div class="header__ligne"></div>
+        </div>
+    </header>
+    </nav>
+    <menu class="menu">
+        <nav id="mainNav" x-show="menuIsOpen">
+            <menu class="menu">
+                <div class="menu__rawfootage">
+                    <img class="menu__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+                    <a href="../fr/index.html" class="menu__raw">Raw </a><a href="../fr/index.html" class="menu__footage">
+                        Footage</a>
+                    <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menu__menuburger"
+                        src="../fr/assets/icones/croix.svg" alt="croix" />
+                </div>
+                <div class="menu__ligne"></div>
+                </div>
+            </menu>
+            <ul class="menu__overlay">
+                <h2 class="menu__titre">ARTICLES<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+                <li><a class="menu__des" href="articlereplique.html">Une réplique profonde et pertinente</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlefilm.html">Le film “Boyz N The Hood”</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlereal.html">John Singleton, le réalisateur</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlemusique.html">La musique associée, par Ice Cube</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlelivre.html">Un livre à retenir, “The Hate U Give”</a></li>
+                <div class="menu__espace"> </div>
+                </span>
+                </div>
+                <h2 class="menu__titre">DÉCOUVRIR<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+                <li><a class="menu__des" href="livres.html">Livres associés</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="galerie.html">Galerie de films</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="projets.html">Projets étudiants</a></li>
+                <div class="menu__espace"></div>
+                <p class="menu__des2">© 2024 - Axel Saltini<a href="../en/index.html"><img class="menu__langue"
+                            src="../fr/assets/icones/english.svg"></a></p>
+            </ul>
+        </nav>
+        </a>
+    </menu>
+    <article>
+        <section x-show="!menuIsOpen">
+            <h1 class="article__titre2">Autres<a class="article__rouge"> livres</a></h1>
+        </section>
+        <section <section class="article__section2" x-show="!menuIsOpen">
+            <p class="article__lecture">« Boyz N The Hood » est une œuvre qui a énormément impacté la communauté noire
+                en exposant la dure réalité présente dans
+                ses scènes.
+            </p>
+            <p class="article__lecture">De nombreux livres exposent aussi différentes visions ou autres thématiques
+                importantes à aborder, en
+                voici quelques
+                exemples.</p>
+        </section>
+        <section x-show="!menuIsOpen">
+            <div class="main__conteneur">
+                <center>
+                    <div class="main__relative">
+                        <center><img class="main__livresimg2" src="../fr/assets/img/livres2.webp"></center>
+                        <center><img class="main__livresimg" src="../fr/assets/img/livres1.webp"></center>
+                        <center><img class="main__livresimg" src="../fr/assets/img/livres1.webp"></center>
+                        <center><img class="main__livresimg3" src="../fr/assets/img/livres2.webp"></center>
+                        <div class="main__gtexteimage">
+                            <h2 class="main__gintertitre">2020</h2>
+                            <div class="article__espace2"></div>
+                            <div class="main__imggauche">
+                                <center><img src="../fr/assets/img/livresa1.webp"></center>
+                                <p class="main__glecture">L’autre moitié de soi</p>
+                                <p class="main__glecture">Brit Bennett</p>
+                            </div>
+                            <div class="article__espace2"></div>
+                            <div class="main__imgdroite">
+                                <center><img src="../fr/assets/img/livresa2.webp"></center>
+                                <p class="main__glecture">Sublime royaume</p>
+                                <p class="main__glecture">Yaa Gyasi</p>
+                            </div>
+                            <div class="article__espace2"></div>
+                            <div class="main__imggauche">
+                                <center><img src="../fr/assets/img/livresa3.webp"></center>
+                                <p class="main__glecture">Un soupçon de liberté</p>
+                                <p class="main__glecture">Margaret Wilkerson Sexton</p>
+                            </div>
+                            <div class="article__espace2"></div>
+                            <div class="main__imgdroite">
+                                <center><img src="../fr/assets/img/livresa4.webp"></center>
+                                <p class="main__glecture">Des baisers parfums tabac</p>
+                                <p class="main__glecture">Tayari Jones</p>
+                            </div>
+                            <div class="article__espace2"></div>
+                            <h2 class="main__gintertitre">2021</h2>
+                            <div class="article__espace2"></div>
+                            <div class="main__imggauche">
+                                <center><img src="../fr/assets/img/livresa5.webp"></center>
+                                <p class="main__glecture">Balèze</p>
+                                <p class="main__glecture">Kiese Laymon</p>
+                            </div>
+                        </div>
+                </center>
+            </div>
+            </center>
+            </div>
+        </section>
+    </article>
+    <footer x-show="!menuIsOpen">
+        <div class="footer__ligne"></div>
+        <section class="footer__rawfootage">
+            <a href="../fr/index.html" class="footer__raw">Raw </a><a href="../fr/index.html" class="footer__footage">
+                Footage</a>
+        </section>
+        <section class="footer__texte">
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=contact.html>Contact</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=apropos.html>A propos</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=glossaire.html>Glossaire</a></h3>
+            <div class="footer__espace"></div>
+            <h3 class="footer__titre">Mentions légales</h3>
+            <p class="footer__p">Projet réalisé dans le cadre d’un exercice pédagogique au département <a
+                    class="footer__hyperlien2" href="https://butmmi.thomasjeu.fr/#/">MMI de
+                    Montbéliard.</a></p>
+            <div class="footer__espace"></div>
+            <p class="footer__p"><a href="mailto:axel.saltini@edu.univ-fcomte.fr">axel.saltini@edu.univ-fcomte.fr</a>
+            </p>
+            <div class="footer__espace"></div>
+            <div class="footer__espace"></div>
+            <p class="footer__p">© 2024 - Axel Saltini</p>
+        </section>
+    </footer>
+</body>

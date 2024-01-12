@@ -9,7 +9,7 @@
     <title>Raw Footage</title>
 
     <link rel="stylesheet" href="../fr/src/css/style.css" />
-    <link rel="icon" href="../fr/assets/icones/menuburger.svg" />
+    <link rel="icon" href="../fr/assets/icones/logosite.svg" />
     <script src="//unpkg.com/alpinejs" defer></script>
 
 </head>
@@ -32,8 +32,7 @@
             <menu class="menu">
                 <div class="menu__rawfootage">
                     <img class="menu__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
-                    <a href="../fr/index.html" class="menu__raw">Raw </a><a href="../fr/index.html"
-                        class="menu__footage">
+                    <a href="../fr/index.html" class="menu__raw">Raw </a><a href="../fr/index.html" class="menu__footage">
                         Footage</a>
                     <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menu__menuburger"
                         src="../fr/assets/icones/croix.svg" alt="croix" />
@@ -42,22 +41,18 @@
                 </div>
             </menu>
             <ul class="menu__overlay">
-                <div x-data="{ estOuvert: false }">
-                    <h2 @click="estOuvert = ! estOuvert" class="menu__titre">ARTICLES<img class="menu__blood"
-                            src="../fr/assets/icones/blood.svg"></h2>
-                    <span x-show="estOuvert">
-                        <li><a class="menu__des" href="articlereplique.html">Une réplique profonde et pertinente</a>
-                        </li>
-                        <div class="menu__separation"></div>
-                        <li><a class="menu__des" href="articlefilm.html">Le film “Boyz N The Hood”</a></li>
-                        <div class="menu__separation"></div>
-                        <li><a class="menu__des" href="articlereal.html">John Singleton, le réalisateur</a></li>
-                        <div class="menu__separation"></div>
-                        <li><a class="menu__des" href="articlemusique.html">La musique associée, par Ice Cube</a></li>
-                        <div class="menu__separation"></div>
-                        <li><a class="menu__des" href="articlelivre.html">Un livre à retenir, “The Hate U Give”</a></li>
-                        <div class="menu__espace"> </div>
-                    </span>
+                <h2 class="menu__titre">ARTICLES<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+                <li><a class="menu__des" href="articlereplique.html">Une réplique profonde et pertinente</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlefilm.html">Le film “Boyz N The Hood”</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlereal.html">John Singleton, le réalisateur</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlemusique.html">La musique associée, par Ice Cube</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="articlelivre.html">Un livre à retenir, “The Hate U Give”</a></li>
+                <div class="menu__espace"> </div>
+                </span>
                 </div>
                 <h2 class="menu__titre">DÉCOUVRIR<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
                 <li><a class="menu__des" href="livres.html">Livres associés</a></li>
@@ -66,16 +61,17 @@
                 <div class="menu__separation"></div>
                 <li><a class="menu__des" href="projets.html">Projets étudiants</a></li>
                 <div class="menu__espace"></div>
-                <p class="menu__des2">© 2024 - Axel Saltini<img href="../en/" class="menu__langue"
-                        src="../fr/assets/icones/english.svg"></p>
+                <p class="menu__des2">© 2024 - Axel Saltini<a href="../en/index.html"><img class="menu__langue"
+                            src="../fr/assets/icones/english.svg"></a></p>
             </ul>
         </nav>
         </a>
     </menu>
     <article>
         <section x-show="!menuIsOpen">
-            <h1 class="article__titre">"It Was A<a class="article__rouge">Good</a>Day" - Ice <a class="article__rouge">Cube</a></h1>
+            <h1 class="article__titre">"It Was A<a class="article__rouge"> Good </a>Day" - Ice <a class="article__rouge">Cube</a></h1>
             <center><img src="../fr/assets/img/musique1.webp" alt="musique1" class="article__img"></center>
+            <figcaption class="article__caption">Ice Cube, Illustration</figcaption>
         </section>
         <section x-show="!menuIsOpen" class="article__section">
             <h5 class="article__lecture">Publié par Axel Saltini le 25/10 – 2 min de lecture<img class="article__blood"
@@ -90,6 +86,7 @@
         </section>
         <center><img x-show="!menuIsOpen" class="article__img" src="../fr/assets/img/musique2.webp" alt="musique2">
         </center>
+        <figcaption x-show="!menuIsOpen" class="article__caption">Ice Cube dans "Dangerous Ground"</figcaption>
         <section class="article__section" x-show="!menuIsOpen">
             <h2 class="article__intertitre">Une journée pas comme les autres</h2>
             <p class="article__lecture">"It Was A Good Day" est une chanson dans laquelle le rappeur décrit une journée exceptionnelle, à l'époque où il vivait
@@ -102,15 +99,15 @@
             <p class="article__lecture">Ce morceau représente parfaitement la difficulté à surmonter toutes les <a class="article__rouge">tensions et violences</a> des quartiers défavorisés
             d'une manière originale.</p>
             <p class="article__lecture">En effet, tout ce qui rend cette journée parfaite aux yeux d'Ice Cube est totalement normal pour nous. "Boyz N The Hood"
-            traitait de ces modes de vie difficiles des quartiers de Los Angeles à travers une dure réalité. Ici, le rappeur
+            traitait de ces modes de vie difficiles des quartiers de Los Angeles à travers une <a class="article__rouge">dure réalité</a>. Ici, le rappeur
             souligne justement la rareté d'une journée comme celle-ci, ce qui accentue davantage la dureté de son quotidien.</p>
-            <p class="article__lecture">On se rend vraiment compte que le mode de vie n’est pas du tout le même et que les gens vivent dans la peur constante.
+            <p class="article__lecture">On se rend vraiment compte que le mode de vie n’est pas du tout le même et que les gens vivent dans la <a class="article__rouge">peur</a> constante.
             Le simple fait de pouvoir sortir et se détendre est exceptionnel.</p>
             <div class="article__espace"></div>
         </section>
         <div x-show="!menuIsOpen" class="article__ligne"></div>
         <center><video class="article__video" x-show="!menuIsOpen" height="200" controls>
-                <source src="../fr/assets/video/videomusique.mp4" type="video/mp4">
+                <source src="https://saltini-axel-mmi.fr/video/videomusique.mp4" type="video/mp4">
             </video>
             <figcaption x-show="!menuIsOpen" class="article__caption">It Was A Good Day - Paroles</figcaption>
         </center>
@@ -119,7 +116,7 @@
             <h2 class="article__intertitre">Un espoir naissant</h2>
             <p class="article__lecture">Enfin, cette chanson est un véritable message d'espoir au même titre que le long-métrage de John Singleton. Le rappeur
             aspire à une vie meilleure en se rendant compte que même dans la misère, il y a toujours de belles choses à vivre. C'est
-            un morceau iconique de son genre musical qui démontre les talents d'Ice Cube en écriture et en storytelling.</p>
+            un <a class="article__rouge">morceau iconique</a> de son genre musical qui démontre les talents d'Ice Cube en écriture et en storytelling.</p>
         </section>
         <center><a x-show="!menuIsOpen" href="articlelivre.html" class="main__button">
                 <img src="../fr/assets/icones/fleche.svg" alt="fleche">
